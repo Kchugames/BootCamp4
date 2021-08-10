@@ -1,0 +1,31 @@
+.app-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+}
+
+.sidenav {
+    flex-basis: 20%;
+    ul{
+        li{
+            list-style: none;
+            padding: 1rem;
+
+            a {
+                text-decoration: none;
+                color: rebeccapurple;
+            }
+        }
+        
+    }
+}
+
+// content is block, &__child-app is element)
+.content {
+    &__child-app{
+        // below is just saying its gonna take up the rest of the space that flex nav isn't
+        flex:1; 
+    }
+}
+
+
